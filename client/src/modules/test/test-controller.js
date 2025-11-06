@@ -16,6 +16,9 @@ TestController.calltoAPI = async () => {
             res=>{
                 console.log(res);
             }
+
         )
     ).catch(console.log);
 };
+
+export default TestController;

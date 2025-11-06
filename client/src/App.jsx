@@ -2,6 +2,8 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import TestController from './modules/test/test-controller'
+
 
 function App() {
   
@@ -23,7 +25,7 @@ function App() {
       <div className='container mt-5'>
         <h2>Inicio</h2>
         <hr />
-        <button className='btn btn-success'>Llamar a mi API</button>
+        <button className='btn btn-success' onClick={TestController.calltoAPI}>Llamar a mi API</button>
       </div>
       
     </>
